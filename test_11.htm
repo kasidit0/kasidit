@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- table tag :(block tag) -->
+
+    <!-- แบบที่ 1  cell ใน table ขนาดเท่ากัน-->
+     <table border="1" width="600px">
+        <tr> 
+            <!-- tr คือสร้าง row มาก่อนเพื่อทีให้สามารถใช้ td เพื่อสร้าง column ได้  -->
+            <td>aa</td>
+            <td>bb</td>
+            <td>cc</td>
+            <td>dd</td> 
+        </tr>
+
+        <tr>
+            <td>11</td>
+            <td>22</td>
+            <td>33</td>
+            <td>44</td> 
+        </tr>
+
+        <tr>
+            <td>ฟฟ</td>
+            <td>หห</td>
+            <td>กก</td>
+            <td>ปป</td> 
+        </tr>
+
+     </table>
+     <br><br><br>
+     <!-- แบบที่ 2  cell ใน table ขนาดไม่เท่ากัน -->
+      <!-- ควรมองภาพรวมก่อนว่ามีกี่ row กี่ column -->
+     <table border="1" width="500px" style="text-align: center;">
+
+        <tr>
+            <td colspan="2">a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>d</td>
+        </tr>
+        <!-- colspan = ย่อมาจาก column + span -->
+        <tr>
+            <td>e</td>
+            <td colspan="2" rowspan="2">f</td>
+            <td colspan="2">g</td>
+        </tr>
+        <!-- rowspan = ย่อมาจาก row + span -->
+        <tr>
+            <td>h</td>
+            <td rowspan="2">i</td>
+            <td>j</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">k</td>
+            <td>l</td>
+            <td>m</td>
+            
+        </tr>
+        <!-- ต้องซูมดูดีๆว่า e=h a=k  -->
+     </table>
+     <br><br><br>
+     <!-- แบบที่ 3 แบบมีกำหนดหัวตาราง -->   
+     <!-- หัวตารางแนวตั้ง -->
+     <table border="1" width=" 500px ">
+        <tr>
+            <th>No. </th>
+            <th>ชื่อ นามสกุล</th>
+            <th>อายุ</th>
+            <th>สาขา</th>
+            <!-- th h ของth มาจากคำว่า head จะใช้เฉพาะแค่ row ที่ เป็นหัวตาราง และ th จะทำให้ตัวหนังสือหนาขึ้น -->
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>johny winson</td>
+            <td>30</td>
+            <td>IT</td>
+        </tr>
+            <td>2</td>
+            <td>josafe winter</td>
+            <td>30</td>
+            <td>CE</td>
+        <tr>
+        </tr>
+            <td>2</td>
+            <td>josafe winter</td>
+            <td>30</td>
+            <td>CE</td>
+         <tr>
+
+        </tr>
+     </table>
+    <br><br><br>
+    <!-- หัวตารางแนวนอน -->
+    <table border="1" width=" 500px " >
+        <tr>
+            <th>กรุงเทพ </th>
+            <td>บางแค</td>
+            <td>บางบอน</td>
+        </tr>
+        <tr>
+            <th>ราชรี </th>
+            <td>บ้านโป่ง</td>
+            <td>โพธาราม</td>
+        </tr>
+        <tr>
+            <th>กาญ </th>
+            <td>ท่ามะกา</td>
+            <td>บ่อพลอย</td>
+        </tr>
+
+   </table>
+
+</body>
+</html>
